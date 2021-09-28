@@ -27,11 +27,17 @@ export class CtaButton extends LitElement {
         text-shadow: 0px 1px 0px #ffffff;
       }
       a:hover {
-        background-color: transparent;
+        background-color: blue;
+        outline: 2px dotted;
+        box-shadow: 0 0 0 3px blueviolet;
       }
       a:active {
         position: relative;
         top: 1px;
+      }
+      a:focus {
+        outline: 2px dotted;
+        box-shadow: 0 0 0 3px blueviolet;
       }
     `;
   }
@@ -54,10 +60,14 @@ export class CtaButton extends LitElement {
     this.disabled = false;
   }
 
+  changeWindow() {
+    window.open(this.link);
+  }
+
   render() {
     return html`
       <a href="${this.link}" tabindex="-1"
-        ><button ?disabled="${this.disabled}">
+        ><button ?disabled="${this.disabled}" @click="${this.changeWindow}">
           <simple-icon-lite icon="${this.icon}"></simple-icon-lite>
           ${this.title}
           <slot></slot>
