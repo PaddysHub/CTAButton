@@ -47,7 +47,7 @@ export class CtaButton extends LitElement {
 
   constructor() {
     super();
-    this.title = 'Hey there';
+    this.title = 'Grey Goose';
     this.link =
       'https://www.greygoose.com/products.html?utm_source=google&utm_medium=paidsearch&utm_c[…]jfRq-mCM4HhCqWQQelgq6Ws7HM9PC8Y7AzTYmTVj0hwT3KRoCV1oQAvD_BwE';
     this.icon = 'save';
