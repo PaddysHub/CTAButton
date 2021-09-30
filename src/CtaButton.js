@@ -39,6 +39,12 @@ export class CtaButton extends LitElement {
         outline: 2px dotted;
         box-shadow: 0 0 0 3px blueviolet;
       }
+
+      a:disabled {
+        opacity: 20%;
+        transition: none;
+        cursor: default;
+      }
     `;
   }
 
