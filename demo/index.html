@@ -1,51 +1,25 @@
-import { html } from 'lit';
-import '../cta-button.js';
-export default {
-  title: 'CtaButton',
-  component: 'cta-button',
-  argTypes: {
-    title: { control: 'text' },
-    link: { control: 'number' },
-    textColor: { control: 'color' },
-    icon: {control: 'text'},
-    disabled: {control: 'boolean'}
-  },
-};
-function Template({ 
-    title = 'Grey Goose', 
-    link = 'https://www.greygoose.com/products.html?utm_source=google&utm_medium=paidsearch&utm_c[…]jfRq-mCM4HhCqWQQelgq6Ws7HM9PC8Y7AzTYmTVj0hwT3KRoCV1oQAvD_BwE',
-    textColor,
-    icon,  
-    disabled = false,
-}) {
-  return html`
-    <cta-button
-      style="--cta-button-text-color: ${textColor || 'black'}"
-      .title="Grey Goose"
-      .link=${link}
-      .icon=${icon}
-      .disabled=${disabled}
-    >
-      
-    </cta-button>
-    <cta-button
-      style="--cta-button-text-color: ${textColor || 'black'}"
-      .title="Vodka"
-      .link=${link}
-      .icon="editor:monetization-on"
-      .disabled=${disabled}
-    >
-      
-    </cta-button>
-    <cta-button
-      style="--cta-button-text-color: ${textColor || 'black'}"
-      .title="Want Grey Goose?"
-      .link=${link}
-      .icon="device:battery-charging-80"
-      .disabled=${disabled}
-    >
-      
-    </cta-button>
-  `;
-}
-export const Regular = Template.bind({});
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <cta-button title="Grey Goose">
+  </cta-button>
+  <cta-button icon = "editor:monetization-on" title="Vodka">
+  </cta-button>
+  <cta-button  disabled icon = "device:battery-charging-80" title="Want Grey Goose?">
+  </cta-button>
+
+  
+  <script type="module">
+    import '../cta-button.js';
+  </script>
+</body>
+</html>
+
