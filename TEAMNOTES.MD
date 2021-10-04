@@ -22,3 +22,10 @@ host([invert]) .ctaButton:focus {
         --psu-foreground-color: #003087;
         --psu-background-color: white;
       }
+      
+ September 30th 
+ Today we worked on actually publishing our button to npm.  We were successful in doing so. We made an organization on npm to replicate our organization on GitHub then Andrew was able to successfully publish our button to that organization.  We also worked out a few bugs including our button openning multiple windows when we click on the button.  We got all of our states figured out and our focus state working correctly. We added in a disabled feature for one of the three buttons.  We then learned how to add all of our information in the storybook.
+ 
+ 
+ October 3rd
+ Today we just went through and double checked everything.  We tested the buttonsn functionality out and it checked out.  We did have to do some more work though for adding information into the StorybookJS doc. We were sort of confused on this task at first but then soon figured it all out. We then finished by posting our link to the button that we posted on npm. 
