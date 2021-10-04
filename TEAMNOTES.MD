@@ -26,4 +26,4 @@ host([invert]) .ctaButton:focus {
  
  
  October 3rd
- Today we worked later in the day and just went through and double checked everything.  We tested the buttons functionality out and it checked out.  We did have to do some more work though for adding information into the Storybook doc. We were sort of confused on this task at first but then soon figured it all out.  The storybook portion really wasn't too difficult once we read the link that was sent out on slack a few days ago. We then finished by posting our link to the button that we posted on npm. 
+ Today we worked later in the day and just went through and double checked everything.  We tested the buttons functionality out and it checked out.  We did have to do some more work though for adding information into the Storybook doc. We actually ran into a few problems doing this and got some errors back.  We could not figure out why we were getting the errors because we needed to document those pieces of the button. We ended up commenting our the pieces that were giving us back errors. 
