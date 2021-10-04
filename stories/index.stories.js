@@ -1,44 +1,51 @@
 import { html } from 'lit';
-import '../cta-button.js';
-
+// import '../cta-button.js';
 export default {
   title: 'CtaButton',
   component: 'cta-button',
   argTypes: {
     title: { control: 'text' },
-    counter: { control: 'number' },
+    link: { control: 'number' },
     textColor: { control: 'color' },
+    icon: { control: 'text' },
+    disabled: { control: 'boolean' },
   },
 };
-
-function Template({ title = 'Hello world', counter = 5, textColor, slot }) {
+function Template({
+  // title = 'Grey Goose',
+  link = 'https://www.greygoose.com/products.html?utm_source=google&utm_medium=paidsearch&utm_c[…]jfRq-mCM4HhCqWQQelgq6Ws7HM9PC8Y7AzTYmTVj0hwT3KRoCV1oQAvD_BwE',
+  textColor,
+  icon,
+  disabled = false,
+}) {
   return html`
     <cta-button
       style="--cta-button-text-color: ${textColor || 'black'}"
-      .title=${title}
-      .counter=${counter}
+      // title="Grey Goose"
+      .link=${link}
+      .icon=${icon}
+      .disabled=${disabled}
     >
-      ${slot}
+      
+    </cta-button>
+    <cta-button
+      style="--cta-button-text-color: ${textColor || 'black'}"
+      // title="Vodka"
+      .link=${link}
+      // icon="editor:monetization-on"
+      .disabled=${disabled}
+    >
+      
+    </cta-button>
+    <cta-button
+      style="--cta-button-text-color: ${textColor || 'black'}"
+      // title="Want Grey Goose?"
+      .link=${link}
+      // icon="device:battery-charging-80"
+      .disabled=${disabled}
+    >
+      
     </cta-button>
   `;
 }
-
 export const Regular = Template.bind({});
-
-export const CustomTitle = Template.bind({});
-CustomTitle.args = {
-  title: 'My title',
-};
-
-export const CustomCounter = Template.bind({});
-CustomCounter.args = {
-  counter: 123456,
-};
-
-export const SlottedContent = Template.bind({});
-SlottedContent.args = {
-  slot: html`<p>Slotted content</p>`,
-};
-SlottedContent.argTypes = {
-  slot: { table: { disable: true } },
-};
