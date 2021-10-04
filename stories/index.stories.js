@@ -28,24 +28,6 @@ function Template({
     >
       
     </cta-button>
-    <cta-button
-      style="--cta-button-text-color: ${textColor || 'black'}"
-      // title="Vodka"
-      .link=${link}
-      // icon="editor:monetization-on"
-      .disabled=${disabled}
-    >
-      
-    </cta-button>
-    <cta-button
-      style="--cta-button-text-color: ${textColor || 'black'}"
-      // title="Want Grey Goose?"
-      .link=${link}
-      // icon="device:battery-charging-80"
-      .disabled=${disabled}
-    >
-      
-    </cta-button>
   `;
 }
 export const Regular = Template.bind({});
