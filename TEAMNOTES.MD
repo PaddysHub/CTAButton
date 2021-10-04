@@ -1,13 +1,11 @@
+
+Class Participation - Activity
+
 We learned basic CSS for the button.
-
 How to add a link to the button.
-
 How to make the button more accessibly friendly.
-
 Found multiple hepful resources online for learning JS.
-
 Set up a weekly meeting time on Sundays.
-
 Set goals for our button this week.
 
 
@@ -28,4 +26,4 @@ host([invert]) .ctaButton:focus {
  
  
  October 3rd
- Today we just went through and double checked everything.  We tested the buttonsn functionality out and it checked out.  We did have to do some more work though for adding information into the StorybookJS doc. We were sort of confused on this task at first but then soon figured it all out. We then finished by posting our link to the button that we posted on npm. 
+ Today we worked later in the day and just went through and double checked everything.  We tested the buttons functionality out and it checked out.  We did have to do some more work though for adding information into the Storybook doc. We were sort of confused on this task at first but then soon figured it all out.  The storybook portion really wasn't too difficult once we read the link that was sent out on slack a few days ago. We then finished by posting our link to the button that we posted on npm. 
